@@ -1,6 +1,8 @@
 blackduck:
   name: BlackDuck
   runs-on: ubuntu-latest
+  on:
+  workflow_dispatch:
   steps:
     - uses: philips-labs/blackduck-scanner-action@v1
       with:
