@@ -1,0 +1,12 @@
+blackduck:
+  name: BlackDuck
+  runs-on: ubuntu-latest
+  steps:
+    - uses: philips-labs/blackduck-scanner-action@v1
+      with:
+        token: "YThmY2JhNzMtMzRmOC00ZDQ3LTlkZDgtMWMwOWRmMmFmMzNkOjNhMWU1NTU0LTI4NzQtNDIxYy05YmUyLTRhZTUxYzYyYTNiNA=="
+        projectName: test-ns
+        versionPrefix: 1.0.0
+        url: https://blackduck.rwts-tools.com/
+        sourcePath: ./
+        extraArgs: --detect.risk.report.pdf=true
