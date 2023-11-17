@@ -4,8 +4,8 @@ on:
 
 jobs:
   blackduck:
-  runs-on: ubuntu-latest  
-  steps:
+    runs-on: ubuntu-latest  
+    steps:
     - uses: philips-labs/blackduck-scanner-action@v1
       with:
         token: "YThmY2JhNzMtMzRmOC00ZDQ3LTlkZDgtMWMwOWRmMmFmMzNkOjNhMWU1NTU0LTI4NzQtNDIxYy05YmUyLTRhZTUxYzYyYTNiNA=="
